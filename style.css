@@ -10,53 +10,70 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: #0ef;
 }
+/* body:hover{
+    background-color:beige;
+} */
 .box{
     background-color:beige;
     width: 400px;
-    padding: 30px;
+    padding: 25px;
     border-radius: 40px;
-
+    border: 2px solid black;
 }
+/* .box:hover{
+    background-color:green;
+
+} */
+
+/* header */
 .qr-header h1{
     font-size: 26px;
     text-align: center;
     color: #ff004f;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     text-transform: uppercase;
+    text-decoration: underline;
 
 }
 .qr-header input{
     width: 100%;
     margin-block: 12px;
 }
-.qr-header input,select{
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    outline:none;
-    border: 2px solid blue;
-}
 .qr-header label{
     color: black;
     font-size: 20px;
     margin-top: 10px;
+    text-align: right;
+}
+.qr-header select{
+    width:50%;
+}
+.qr-header input,select{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    /* outline:dashed red; */
+    border: 2px dashed red;
 }
 .qr-header div{
     display: flex;
     justify-content: space-between;
 }
+
+/* footer */
+
 .qr-footer{
     margin-top: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .qr-footer a{
-    background-color: black;
-    text-decoration: none;
+    background-color: rgb(227, 199, 104);
+    text-decoration: underline;
     font-size: 20px;
-    padding: 10px 36px;
+    padding: 15px 36px;
     margin-inline: 2px;
     color: #ff004f;
     font-weight: 600;
@@ -64,9 +81,16 @@ body{
     justify-content: center;
 
 }
+#generateBtn:hover, #downloadBtn:hover{
+    background-color: #36d7b7;
+
+}
+/* body */
+
 .qr-body{
     display: grid;
     place-items: center;
+    padding: 20px;
     margin-top: 10px;
 }
 
@@ -75,8 +99,8 @@ body{
     max-height: 100%;
     margin-block: 10px;
     padding: 20px;
-    border: 0.5px solid var(--border-color);
-    border-radius: var(--border-radius);
+    border: 0.5px solid black;
+    border-radius: 10px;
 }
 
 @media screen and (max-width:520px){
